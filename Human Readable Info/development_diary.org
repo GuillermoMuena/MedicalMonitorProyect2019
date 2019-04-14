@@ -1,0 +1,57 @@
+#+Title: Development Diary / Diario de desarrollo
+#+Author: Guillermo Muena
+
+* 2019-04-15
+
+* 2019-04-14
+
+========== INICIO DE LA ENTRADA ==========
+
+Comienzo este diario de desarrollo. La idea es ir ordenando desde el
+principio el proyecto para ir avanzando lento pero seguro hasta la
+presentación del mismo. Lo primero que hice fue ordenar el GitHub de manera
+prolija. La creación del mismo y el mail con el link les fue enviado a
+los profesores el 2019-04-12, explicándoles cómo iba a funcionar
+esto. Al día de la fecha no hubo respuesta por su parte.
+
+Hoy cominezo con el diario de desarrollo, colocándolo en una carpeta
+separada que llamé 'Human Readable Info'. La idea de hoy es comenzar
+con alguna rutina y sus respectivas pruebas. Al contrario de lo que
+hice el año pasado de probar todas las rutinas en conjunto al final
+del desarrollo, este año me propongo crear estructuras y funciones
+individuales, en C (probablemente las desarrolle en C++) cuya lógica
+pueda probar exhaustivamente mediante rutinas de prueba en C++, y
+luego pasarlas a la ejecución en el microprocesador del LPC. Para
+aquellas cosas que sean sumamente hardware dependant, voy a hacer
+funciones de prueba pequeñas, un proceso de prueba en laboratorio
+acotado (con un respectivo protocolo para toma de resultados) y me
+limitaré a hacer debugging en casa, para acotar lo más posible el
+desarrillo en el laboratorio de electrónica. De esta manera pretendo
+gastar la menor cantidad de tiempo posible en el laboatorio,
+maximizando mi tiempo en el mismo y dejando el tiempo de programación
+estrictamente ligado a mis horas más productivas.
+
+En principio estaríamos hablando de pasar 3 horas semanales en el
+laboratorio de electrónica: una hora el lunes, una hora el viernes y
+una hora el sábado, únicamente con la finalidad de hacer pruebas con
+instrumental. El resto de los días y horarios hay que dedicarlos al
+desarrollo de rutinas, planificación de mediciones y a la corrección
+de errores. Con una media de una hora por día de desarrollo de todas
+estas etapas creo que llegaré a julio con las rutinas base listas, y
+con las correcciones pertinentes a la placa.
+
+A todo este tiempo de desarrollo le sumaré una hora o dos más a la
+semana para planificación, redacción de informes, pulido del diario de
+desarrollo y demás cuetiones.
+
+Esta es la primera entrada, quedando aquí el primer término del
+trabajo. Para el día de mañana lunes 2019-04-15 se planifica el
+desarrollo de la rutina de ADC del microcontrolador. La misma se
+pretende utilizar tanto en la medición de temperatura como en la
+medición de la presión arterial. El día de mañana no se concurrirá al
+laboratorio. La idea es diseñar los test necesarios para probar el
+correcto funcionamiento del ADC con los instrumentos de
+laboratorio. Obviamente se rescatará lo diseñado el año pasado
+respecto a esta rutina.
+
+========== FIN DE LA ENTRADA ==========

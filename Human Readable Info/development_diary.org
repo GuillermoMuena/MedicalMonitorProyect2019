@@ -3,6 +3,44 @@
 
 * 2019-04-15
 
+========== INICIO DE LA ENTRADA ==========
+
+Hoy se desarrollo la parte de ADC, más precisamente la
+incicialización. Lo que hice fue  tomar la función que desarrollamos
+el año pasado y darle un caracter más genérico, implementando defines
+para controlar la compilación condicional y haciendo un archivo .h con
+todos los defines necesarios para que la implementación de la
+compilación condicional sea lógica y ordenada.
+
+Además de eso estoy documentando todo en formato de DOXYGEN. Un error
+muy patente que noté el año pasado es que nos faltaba un montón de
+documentación del código. Implementar desde ahora doxygen puede servir
+para que el código sea más fácilmente debuggeable, además de
+legible. Espero que esto también me aliviane el hecho de que voy a
+tener que preparar un informe final yo sólo. Empezar con buena letra
+ahora puede ser ventajoso en un futuro.
+
+Hay que hacer las pruebas pertinentes a ver si el código funciona,
+pero por ahora no tengo el MCUexpreso en esta computadora. Me parece
+que lo voy a probar recurriendo a la otra, dejando a esta PC libre de
+ese programa endemoniado. Por ahora estoy editando todo en Emacs, lo
+que me permite ser más prolijo, rápido y eficiente.
+
+Por ahora no hay rutinas de prueba, dediqué una hora hoy a este
+pasaje. Mañana será otra y emplearé el tiempo en idear una forma de
+testeo por pasos, además de hacer la función que maneje los
+resultados/lecturas del ADC para poder verlos de alguna manera.
+
+También tengo que verificar la implementación del medidor de
+temperatura. Tendría que cambiar la plaquita y mandarla a diseñar,
+para que sea algo un cachito más presentable.
+
+A todo esto hay que sumarle la implemtación del medidor de presión con
+el LPC 1769. Supongo que tendré que volver al endemoniado código del
+Arduino y ver cómo lo habíamos llevado a cabo.
+
+========== FIN DE LA ENTRADA ==========
+
 * 2019-04-14
 
 ========== INICIO DE LA ENTRADA ==========

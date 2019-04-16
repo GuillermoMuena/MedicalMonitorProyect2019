@@ -84,3 +84,12 @@
  */
 
 #define BURST_MODE_ENABLE false
+
+/**
+ * @def ACTIVE_ADC_DEBUG es el define que permite imprimir por consola los datos leídos
+ * por el ADC. Usar esto requiere Semihosting del proyecto dentro del IDE.
+ * @see void ADC_default_function (uint16_t data_ADC)
+ * @see Semihosting in LPC1769, MCUExpressoIDE.
+ */
+
+#define ACTIVE_ADC_DEBUG false

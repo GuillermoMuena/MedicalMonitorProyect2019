@@ -1,5 +1,55 @@
 #+Title: Development Diary / Diario de desarrollo
-#+Author: Guillermo Muena
+#+Author: Guillermo Ariel Muena Vidal
+
+* 2019-04-16
+
+========== INICIO DE LA ENTRADA ==========
+
+Hoy se trabajó sobre el ADC, más precisamente sobre la rutina de
+atención de interrupciones del mismo. Como viene siendo costumbre se
+acomodó todo para que la función desarrollada sea lo más genérica
+posible. Hay que tener en cuenta que debido a los cambios que se
+prestenden hacer en el proyecto es posible que sea necesario hacer dos
+proyectos separados, uno para el monitor médico y otro separado para
+el medidor de presión arterial, así que lo mejor es tener esta parte
+del proyecto desarrollada lo más genéricamente posible (y así ya tener
+dos problemas solucionados con un sólo código).
+
+El código se encuentra correspondientemente documentado en doxygen,
+para aquel que quiera leerlo. Básicamente se respetó la rutina
+desarrollada para el proyecto del año pasado, pero incorporando las
+nociones de compilación condicional. Nótese que se lo ha hecho
+dependiente del mismo archivo de configuración que controla la
+inicialización del hardware del ADC. De esta manera no puede cometerse
+el error de inicializar por hardware el ADC y no atender las
+interrupciones.
+
+Se desarrolló también una función genérica de manejo de datos y se
+aliasearon todas las funciones particulares. La idea es usar la
+función genérica para el debuggeo del ADC y luego definir cada función
+por separado para el manejo de cada canal. De esta manera podemos
+debuggear de manera sencilla. Si queremos probar esto es necesario
+hacer un main y generar un proyecto en semihosting.
+
+El día de mañana la idea sería generar un proyecto para hacer las
+pruebas pertinentes. Todavía no se concurrirá al laboratorio para las
+pruebas. No por ahora. Una vez que se tenga lo que se quiere probar y
+se estipulen los métodos para medir y testear correspondientemente,
+iré al laboratorio.
+
+Mañana será otro día más de programación.
+
+En una nota aparte hoy consulte con Marcelo Romeo si había leído el
+mail que envié el viernes (o el sábado) pasado, con el link
+correspondiente a este repositorio, así que supongo lo habrá visto y
+eventualmente lo clonará o revisará para chequear el progreso. Hoy no
+fue Juan Bacigalupo así que a él no le pude consultar si recibió o no
+el mail. También le consulté a Marcelo sobre la parte del driver de PC
+de la parte de USB. Me dijo que lo veremos más a futuro, pero ante mi
+insistencia me dijo que me iba a mandar unos tutoriales si quiero
+arrancar por mi cuenta.
+
+========== FIN DE LA ENTRADA ==========
 
 * 2019-04-15
 
